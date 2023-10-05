@@ -12,7 +12,7 @@ This guide will walk you through the process of setting up the "Password Expired
 - Power Automate account with a premium or per-user plan.
 - Ensure you have enough API calls for this operation.
 
-(Download Flow)[https://yahoo.com]
+[Download Flow](https://yahoo.com](https://github.com/MSPFE2019/PasswordExpired/blob/main/PasswordExpirationNotice_20231005005052.zip)
 ## Step-by-Step Instructions:
 
 1. **Reoccurring Trigger Setup**:
