@@ -8,10 +8,11 @@ This workflow will send a Microsoft Teams message through Flowbot when a user's 
 This guide will walk you through the process of setting up the "Password Expired" flow in Power Automate. This flow notifies users when their password is about to expire.
 
 ## Prerequisites:
-- Azure App Registration([https://github.com/MSPFE2019/PasswordExpired/blob/main/AzureAppReg]).
+- (Azure App Registration)[https://github.com/MSPFE2019/PasswordExpired/blob/main/AzureAppReg].
 - Power Automate account with a premium or per-user plan.
 - Ensure you have enough API calls for this operation.
 
+(Download Flow)[https://yahoo.com]
 ## Step-by-Step Instructions:
 
 1. **Reoccurring Trigger Setup**:
