@@ -1,6 +1,6 @@
-## Guide to Create App Registration in Azure
+## Guide to Create App Registration in Microsoft Entra ID
 
-Creating an App Registration in Azure is a fundamental step when you want to integrate your application with Azure services or Microsoft Graph. In this guide, we’ll walk through the process of setting up an App Registration in Azure and assigning the necessary permissions for the scenarios you outlined.
+Creating an App Registration in **Microsoft Entra ID** (formerly Azure Active Directory) is a fundamental step when you want to integrate your application with Microsoft services or Microsoft Graph. In this guide, we'll walk through the process of setting up an App Registration and assigning the necessary permissions.
 
 ### Prerequisites:
 - An Azure account.
@@ -8,12 +8,12 @@ Creating an App Registration in Azure is a fundamental step when you want to int
 
 ### Steps:
 
-1. **Login to Azure Portal**:
-   - Go to the [Azure Portal](https://portal.azure.com/).
-   - Sign in using your Azure credentials.
+1. **Login to Microsoft Entra ID / Azure Portal**:
+   - Go to the [Microsoft Entra admin center](https://entra.microsoft.com/) or the [Azure Portal](https://portal.azure.com/) → **Microsoft Entra ID**.
+   - Sign in using your credentials.
 
 2. **Navigate to App Registrations**:
-   - In the left navigation pane, search for and select “App registrations”.
+   - In the left navigation pane, select **App registrations**.
 
 3. **Create New Registration**:
    - Click on the “New registration” button at the top.
@@ -58,4 +58,9 @@ Creating an App Registration in Azure is a fundamental step when you want to int
 
 - This guide assumes that you’re familiar with Azure and Microsoft Graph concepts. If you’re not, you might need to explore Azure documentation further or consider engaging with Azure support or community forums for specific issues or queries.
 
-By following this guide, you should have a correctly set-up App Registration with the right permissions for your needs. Remember to always review and ensure that you’re not over-provisioning permissions; only grant what's necessary for your application's functionality.
+By following this guide, you should have a correctly set-up App Registration in Microsoft Entra ID with the right permissions for your needs. Remember to always review and ensure that you're not over-provisioning permissions; only grant what's necessary for your application's functionality.
+
+---
+
+> **Supported Cloud:** Commercial. For GCC/GCC High, use the appropriate Microsoft Entra ID endpoint — verify at [Microsoft Entra ID for sovereign clouds](https://learn.microsoft.com/en-us/entra/identity-platform/authentication-national-cloud).  
+> **Last validated:** 2026-08-17. Confirm current app registration steps in [Microsoft Entra ID documentation](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app).

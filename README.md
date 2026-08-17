@@ -23,9 +23,11 @@ This guide will walk you through the process of setting up the "Password Expired
    - **varNumberDates**: Defines when you want the notification to start.
    - **varPassValid**: Input the duration (in days) for which the password is valid. Example: 90 days.
    - **varexpirationDate**: Stores the expiration date. It's a combination of the password's valid duration and the last reset date.
-   - **vartenantID**: Retrieve this from your Azure Active Directory.
+   - **vartenantID**: Retrieve this from your **Microsoft Entra ID** tenant (formerly Azure Active Directory). Found on the app registration Overview page.
    - **varclientID**: Input the value from the app registration you created.
-   - **varSecret**: This is where you input your secret key.
+   - **varSecret**: This is where you input your client secret from the Microsoft Entra ID app registration.
+
+> ⚠️ **Secret rotation:** Client secrets expire. Set a calendar reminder to rotate the secret **before** expiry. When rotating, update `varSecret` (or the corresponding environment variable) with the new secret value before the old one expires to avoid flow failures. Use the shortest expiry period your operations allow. For production, prefer **certificate credentials**. See [Add a client secret – Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app#add-a-client-secret).
 
 3. **HTTP Request Function**:
    - No changes are needed for the "Get user data" function.
@@ -61,3 +63,8 @@ This guide will walk you through the process of setting up the "Password Expired
 ## Conclusion:
 
 This "Password Expired" flow is essential for organizations to remind their users in advance about password expirations. Ensure to test in your environment and adjust settings as necessary.
+
+---
+
+> **Supported Cloud:** Commercial (GCC environments — verify the HTTP connector and Microsoft Graph `User.Read.All` availability at [Power Platform for US Government](https://learn.microsoft.com/en-us/power-platform/admin/powerapps-us-government)).  
+> **Last validated:** 2026-08-17. Confirm current Microsoft Entra ID app registration steps in [Microsoft documentation](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app).
